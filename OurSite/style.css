@@ -1,0 +1,11 @@
+
+#image-wrapper 
+{
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+#image-wrapper a
+{
+    display: block !important;
+}
