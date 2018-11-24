@@ -1,4 +1,31 @@
+@import url('http://fast.fonts.com/cssapi/86876702-dba0-4e39-8e79-cc8dc8364780.css');
 
+body
+{
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+#outer-wrapper
+{
+    background-image: url("/christmas/advent/graphics/snowflakes-bg.gif");
+}
+
+h1, h2, h3
+{
+    font-family: "Soho W01 Bold";
+    color: #012f60;
+}
+
+/* Calendar page */
+
+#image-centering-wrapper
+{
+    width: 980px;
+    max-width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
 #image-wrapper 
 {
     position: relative;
@@ -9,3 +36,138 @@
 {
     display: block !important;
 }
+.thumb, .star, .number, .link, .border, #wait-alert
+{
+    position: absolute;
+}
+a.link
+{
+	background: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBR‌​AA7) 0 0 repeat;
+}
+#wait-alert
+{
+	left: 34%;
+	top: 10%;
+	width: 32%;
+	border: 2px solid #ffe680;
+	padding: 12px;
+	text-align: center;
+	background-color: #012f60;
+	color: #ffe680;
+	-webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+}
+.hidden
+{
+    display: none;
+}
+div.number img
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -19px;
+    margin-top: -19px;
+}
+#main-image
+{
+    top: 0;
+    left: 0;
+	max-width: 100%;
+	height: auto;
+}
+div.border
+{
+    border: 2px solid #ffe680;      
+}
+div.site-link a
+{
+	margin-left: 1.7%;
+	text-decoration: none;
+	font-weight: bold;
+	color: #012f60;
+}
+
+
+/* Content page */
+
+#inner-wrapper
+{
+    width: 980px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+#header img
+{
+    max-width: 100%;
+	height: auto;
+}
+#content a
+{
+	color: #012f60;
+	text-decoration: none;
+	font-weight: bold;
+}
+#content p
+{
+	line-height: 1.5em;
+}
+#content img
+{
+	max-width: 100%;
+	height: auto;
+}
+#content.portrait .image-and-caption
+{
+	/* width: 1%; */
+  	float: right;
+  	display: table;
+  	margin-left: 32px;
+}
+#content.portrait .cell
+{
+  	height: auto;
+  	overflow: hidden;
+}
+#content.portrait .cell p 
+{
+  font-size: 14px;
+}
+.landscape-caption
+{
+  font-size: 14px !important;
+}
+#content.landscape p
+{
+	width: 60%;
+}
+#content blockquote p
+{
+	font-family: "Soho W01 Medium";
+	font-size: 20px;
+	color: #012f60;
+}
+.return-link
+{
+	padding: 24px 0 24px 0;
+}
+.return-link a
+{
+	background-color: #ffe680;
+	border: 3px solid #012f60;
+	-webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+	padding: 8px 12px 8px 12px;
+	border: 3px solid #012f60;
+	-webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+	padding: 8px 12px 8px 12px;
+	text-decoration: none;
+	font-weight: bold;
+	color: #012f60;
+}
+
+

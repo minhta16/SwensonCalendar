@@ -7,17 +7,43 @@
     </head>
 
     <body>
-        <div class="main-wrapper">
+      <div id="outer-wrapper">
+        <div id="image-centering-wrapper">
+          <div id="image-wrapper"> 
             <img id="main-image" src="swensoncenter.jpg" alt="Swenson Center" class="main" width="980" height="560">
             <div id="window1" class="window">
-              <img src="assets/almanac.png" alt="" class="thumb hidden" style="left: 56.73%; top: 50.18%; width: 6.02%; height: 10.54%;">
-              <div class="border" style="left: 56.53%; top: 49.82%; width: 6.02%; height: 10.54%;"></div>
-              <div class="number" style="left: 52.86%; top: 43.39%; width: 7.76%; height: 13.57%;">
-                <img src="star_01.png" alt="">
+              <img src="assets/almanac.png" alt="" class="thumb hidden">
+              <div class="border"></div>
+              <div class="number">
+                <img src="assets/star_01.png" alt="">
               </div>
-              <a href="http://www.liverpoolmuseums.org.uk/christmas/advent/1-colima-dog.aspx" class="link closed" style="left: 56.73%; top: 50.18%; width: 6.02%; height: 10.54%;"><img src="assets/almanac.png" alt="" class="thumb hidden" style="left: 56.73%; top: 50.18%; width: 6.02%; height: 10.54%;"></a>
-            </div>     
+              <a href="http://augustana.edu" class="link closed"></a>
+            </div>
+
+            <script type="text/javascript">
+              function setWindowStyle(index, left, top) {
+                var parent = document.getElementById("window" + index);
+
+                setStyleOf(parent, "thumb", 0, left, top, 6.02, 10.54);
+                setStyleOf(parent, "border", 0, left - .2, top - .36, 6.02, 10.54);
+                setStyleOf(parent, "number", 0, left - 3.87, top - 6.79, 7.76, 13.57);
+                setStyleOf(parent, "link", 0, left, top, 6.02, 10.54);
+              }
+
+              function setStyleOf(parent, element, index, left, top, width, height) {
+                var elementStyle = parent.getElementsByClassName(element)[index].style;
+                elementStyle.left = left + "%";
+                elementStyle.top = top + "%";
+                elementStyle.width = width  + "%";
+                elementStyle.height = height + "%";
+              }
+
+              setWindowStyle(1, 56.73, 50.78);
+            </script>
+          </div>
+
         </div>
+      </div>
     </body>
     
     
