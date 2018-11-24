@@ -4,6 +4,7 @@
         <meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta charset="utf-8">
         <link href="style.css" rel="stylesheet" type="text/css">
         <title>Swenson Center's Advent Calendar</title>
+        <script type="text/javascript" src="jquery-3.3.1.js"></script>
     </head>
 
     <body>
@@ -12,45 +13,51 @@
           <div id="image-wrapper"> 
             <img id="main-image" src="swensoncenter.jpg" alt="Swenson Center" class="main" width="980" height="560">
             <div id="window1" class="window">
-              <img src="assets/almanac.png" alt="" class="thumb hidden">
+              <img src="assets/almanac.png" alt="" class="thumb">
               <div class="border"></div>
               <div class="number">
                 <img src="assets/star_01.png" alt="">
               </div>
-              <a href="http://augustana.edu" class="link closed"></a>
+              <a href="http://augustana.edu" class="link">
+              <img src="assets/door.jpg" alt="" class="door"></a>
             </div>
             <div id="window2" class="window">
-              <img src="assets/biblebook.png" alt="" class="thumb hidden">
+              <img src="assets/biblebook.png" alt="" class="thumb">
               <div class="border"></div>
               <div class="number">
                 <img src="assets/star_02.png" alt="">
               </div>
-              <a href="http://augustana.edu" class="link closed"></a>
+              <a href="http://augustana.edu" class="link">
+              <img src="assets/door.jpg" alt="" class="door"></a>
             </div>
             <div id="window3" class="window">
-              <img src="assets/coincash.png" alt="" class="thumb hidden">
+              <img src="assets/coincash.png" alt="" class="thumb">
               <div class="border"></div>
               <div class="number">
                 <img src="assets/star_03.png" alt="">
               </div>
-              <a href="http://augustana.edu" class="link closed"></a>
+              <a href="http://augustana.edu" class="link">
+              <img src="assets/door.jpg" alt="" class="door"></a>
             </div>
             <div id="window4" class="window">
-              <img src="assets/dollar.png" alt="" class="thumb hidden">
+              <img src="assets/dollar.png" alt="" class="thumb">
               <div class="border"></div>
               <div class="number">
                 <img src="assets/star_04.png" alt="">
               </div>
-              <a href="http://augustana.edu" class="link closed"></a>
+              <a href="http://augustana.edu" class="link">
+              <img src="assets/door.jpg" alt="" class="door"></a>
             </div>
 
             <script type="text/javascript">
               function setWindowStyle(index, left, top) {
                 var parent = document.getElementById("window" + index);
 
+                // setStyleOf(parent, "door", 0, left, top, 6.02, 10.54);
+                setStyleOf(parent, "door", 0, 0, 0, 100, 100);
                 setStyleOf(parent, "thumb", 0, left, top, 6.02, 10.54);
-                setStyleOf(parent, "border", 0, left - .2, top - .36, 6.02, 10.54);
-                setStyleOf(parent, "number", 0, left - 3.87, top - 6.79, 7.76, 13.57);
+                setStyleOf(parent, "border", 0, left - .2, top - .37, 6.02, 10.54);
+                setStyleOf(parent, "number", 0, left - 4.87, top - 7.79, 7.76, 13.57);
                 setStyleOf(parent, "link", 0, left, top, 6.02, 10.54);
               }
 
@@ -71,6 +78,8 @@
 
         </div>
       </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
+      <!--script type="text/javascript" src="script.js"></script-->
     </body>
     
     

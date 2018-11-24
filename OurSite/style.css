@@ -36,7 +36,7 @@ h1, h2, h3
 {
     display: block !important;
 }
-.thumb, .star, .number, .link, .border, #wait-alert
+.thumb, .door, .star, .number, .link, .border, #wait-alert
 {
     position: absolute;
 }
@@ -57,10 +57,6 @@ a.link
 	-webkit-border-radius: 12px;
     -moz-border-radius: 12px;
     border-radius: 12px;
-}
-.hidden
-{
-    display: none;
 }
 div.number img
 {
@@ -170,4 +166,18 @@ div.site-link a
 	color: #012f60;
 }
 
+.thumb {
+}
 
+.door {
+	transition: 2s;
+}
+.link:hover .door {
+	transform: rotateY(90deg);
+	transform-origin: left;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}*/
